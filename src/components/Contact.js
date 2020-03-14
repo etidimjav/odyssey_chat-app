@@ -13,7 +13,7 @@ function Contact(props) {
             <figcaption>
             <p className="name">{props.name}</p>
             <div className="status">
-                <p className="status-text"><span className={props.online ? 'status-online' : 'status-offline'}></span>{props.online ? 'online' : 'offline'}</p>
+                <p className="status-text"><span className={props.status === 'online' ? 'status-online' : 'status-offline'}></span>{props.status === 'online' ? 'online' : 'offline'}</p>
             </div>
             </figcaption>
         </figure>
